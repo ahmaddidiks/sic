@@ -1,1 +1,1 @@
-# SIC-2022-Ka-Didik
+SIC 2022 note
