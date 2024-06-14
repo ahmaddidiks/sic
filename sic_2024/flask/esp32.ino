@@ -1,6 +1,5 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
-#include <ArduinoJson.h> // install library ArduinoJson
 
 const char* ssid = "";
 const char* password = "";
