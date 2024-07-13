@@ -25,12 +25,12 @@ else:
 number = st.number_input("Insert a number")
 st.write("The current number is ", number)
 
-st.image('mentoring.jpg', caption='Mentoring hari minggu')
+st.image('https://static.streamlit.io/examples/cat.jpg', caption='Mentoring hari minggu')
 
-video_file = open('test_video_short.mp4', 'rb')
-video_bytes = video_file.read()
+# video_file = open('test_video_short.mp4', 'rb')
+# video_bytes = video_file.read()
 
-st.video(video_bytes)
+# st.video(video_bytes)
 
 with st.container():
    st.write("This is inside the container")
