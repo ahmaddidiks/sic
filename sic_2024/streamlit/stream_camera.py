@@ -15,8 +15,12 @@ def app():
 
     # Create a placeholder to display video frames
     frame_placeholder = st.empty()
+    stop_button = st.button("Stop Stream")
 
     while True:
+        if stop_button:
+            break
+
         ret, frame = cap.read()
         if not ret:
             st.error("Error: Could not read frame.")
