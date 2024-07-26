@@ -6,8 +6,8 @@ data = []
 
 @app.route('/sensor/data', methods=['POST'])
 def post():
-    temperature = request.form.get("temperature")
-    kelembapan = request.form.get("kelembapan")
+    temperature = request.args.get("temperature")
+    kelembapan = request.args.get("kelembapan")
     print(f"Received temperature: {temperature}")
     print(f"Received kelembapan: {kelembapan}")
     if temperature is not None and kelembapan is not None:
